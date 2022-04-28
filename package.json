@@ -8,7 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "coverage": "ng test --watch --code-coverage",
-    "sonar": "sonar-scanner"
+    "sonar": "sonar-scanner",
+    "lint": "ng lint"
   },
   "private": true,
   "dependencies": {
@@ -27,10 +28,20 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~13.3.0",
+    "@angular-eslint/builder": "13.2.1",
+    "@angular-eslint/eslint-plugin": "13.2.1",
+    "@angular-eslint/eslint-plugin-template": "13.2.1",
+    "@angular-eslint/schematics": "13.2.1",
+    "@angular-eslint/template-parser": "13.2.1",
     "@angular/cli": "~13.3.0",
     "@angular/compiler-cli": "~13.3.0",
     "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",
+    "@typescript-eslint/eslint-plugin": "5.17.0",
+    "@typescript-eslint/parser": "5.17.0",
+    "eslint": "^8.12.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "jasmine-core": "~4.0.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
@@ -40,6 +51,7 @@
     "karma-jasmine-html-reporter": "~1.7.0",
     "karma-mocha-reporter": "^2.2.5",
     "karma-sonarqube-unit-reporter": "0.0.23",
+    "prettier-eslint": "^14.0.2",
     "sonar-scanner": "^3.1.0",
     "typescript": "~4.6.2"
   }
