@@ -1,0 +1,8 @@
+.vehicle__list {
+  max-width: 70rem;
+}
+
+.loading__spinner {
+  left: 45%;
+  position: absolute;
+}

@@ -1,0 +1,25 @@
+<div *ngIf='!vehicles'
+     class='spinner-border loading__spinner'
+     role='status'>
+  <span class='visually-hidden'>Loading...</span>
+</div>
+
+<table *ngIf='vehicles'
+       class='table vehicle__list'>
+  <thead class='table-dark'>
+  <tr>
+    <td>#</td>
+    <td>Marca</td>
+    <td>Línea</td>
+    <td>Modelo</td>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor='let vehicle of vehicles'>
+    <td>{{vehicle.id}}</td>
+    <td>{{vehicle.marca}}</td>
+    <td>{{vehicle.linea}}</td>
+    <td>{{vehicle.modelo}}</td>
+  </tr>
+  </tbody>
+</table>

@@ -3,8 +3,13 @@
 }
 
 .header__title {
-  font-size: 2rem;
+  font-size: 3.6rem;
   margin-left: 1rem;
+  margin-top: 2rem;
+}
+
+.header__title > a {
+  color: var(--main-text-color);
 }
 
 .hero {
@@ -16,6 +21,12 @@
   width: 100%;
 }
 
+.footer {
+  font-size: 2rem;
+  margin-top: 5rem;
+  text-align: center;
+}
+
 @media screen and (min-width: 768px) {
   .hero {
     min-height: 300px;
@@ -24,16 +35,10 @@
 
 @media screen and (min-width: 1024px) {
   .header__title {
-    font-size: 3.6rem;
+    font-size: 5rem;
   }
 
   .hero {
     min-height: 350px;
-  }
-}
-
-@media screen and (min-width: 2560px) {
-  .hero {
-    min-height: 700px;
   }
 }
