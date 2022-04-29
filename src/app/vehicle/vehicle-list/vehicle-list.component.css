@@ -6,3 +6,8 @@
   left: 45%;
   position: absolute;
 }
+
+.totals-per-brand {
+  list-style: none;
+  margin-top: 4rem;
+}

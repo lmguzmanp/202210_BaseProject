@@ -23,3 +23,10 @@
   </tr>
   </tbody>
 </table>
+
+<ul *ngIf='totalsPerBrand'
+    class='totals-per-brand'>
+  <li *ngFor='let vehicle of totalsPerBrand'>
+    Total {{vehicle.marca}} {{vehicle.quantity}}
+  </li>
+</ul>
