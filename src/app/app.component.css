@@ -1,3 +1,39 @@
 * [lang^="en"] {
   color: green;
 }
+
+.header__title {
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
+.hero {
+  background-image: url("./../assets/images/hero-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  min-height: 170px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    min-height: 300px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header__title {
+    font-size: 3.6rem;
+  }
+
+  .hero {
+    min-height: 350px;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .hero {
+    min-height: 700px;
+  }
+}
