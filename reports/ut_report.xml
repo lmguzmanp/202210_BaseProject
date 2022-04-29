@@ -1,7 +1,48 @@
 <testExecutions version="1">
-  <file path="src/app/app.component.spec.ts">
-    <testCase name="AppComponent should have as title 'base-project'" duration="118"/>
-    <testCase name="AppComponent should create the app" duration="14"/>
-    <testCase name="AppComponent should render title" duration="13"/>
-  </file>
+    <file path="src/app/app.component.spec.ts">
+        <testCase name="AppComponent should render title" duration="54"/>
+        <testCase name="AppComponent should render hero section" duration="5"/>
+        <testCase
+                name="AppComponent should render a footer with my GitHub main username"
+                duration="5"/>
+        <testCase name="AppComponent should create the app" duration="2"/>
+        <testCase name="AppComponent should have as title 'TuSegundazo.com'"
+                  duration="4"/>
+    </file>
+    <file path="src/app/vehicle/vehicle-list/vehicle-list.component.spec.ts">
+        <testCase
+                name="VehicleListComponent should have three rows in the tbody"
+                duration="6"/>
+        <testCase name="VehicleListComponent should match 'Marca' table heading"
+                  duration="4"/>
+        <testCase name="VehicleListComponent should have three vehicles"
+                  duration="4"/>
+        <testCase name="VehicleListComponent should have a table element"
+                  duration="5"/>
+        <testCase name="VehicleListComponent should have one row in the thead"
+                  duration="3"/>
+        <testCase name="VehicleListComponent should create" duration="3"/>
+        <testCase
+                name="VehicleListComponent should match the vehicle's 'modelo'"
+                duration="3"/>
+        <testCase name="VehicleListComponent should match the vehicle's 'marca'"
+                  duration="3"/>
+    </file>
+    <file path="src/app/vehicle/vehicle.spec.ts">
+        <testCase
+                name="Vehicle should have a 'kilometraje' property of type number and should be greater than or equal to 0"
+                duration="1"/>
+        <testCase name="Vehicle should create an instance" duration="1"/>
+        <testCase name="Vehicle should have a 'modelo' property of type number"
+                  duration="1"/>
+        <testCase name="Vehicle should have a 'marca' property" duration="1"/>
+    </file>
+    <file path="src/app/vehicle/vehicle.service.spec.ts">
+        <testCase
+                name="VehicleService should have a getVehicles defined function"
+                duration="2"/>
+        <testCase name="VehicleService should be created" duration="1"/>
+        <testCase name="VehicleService should return an Observable"
+                  duration="1"/>
+    </file>
 </testExecutions>
